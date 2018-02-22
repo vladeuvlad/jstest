@@ -5,7 +5,6 @@ $myWidth = $_POST['height'];
 
 
 echo $myHeight;
-echo " ";
 echo $myWidth;
 
 ?>
