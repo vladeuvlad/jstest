@@ -1,6 +1,6 @@
 <?php
 
-$myHeight = $_POST['width'];</ n>
+$myHeight = $_POST['width'];<br></br>
 $myWidth = $_POST['height'];
 
 
