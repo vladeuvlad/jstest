@@ -1,10 +1,10 @@
 <?php
 
-$myHeight = 'Your Width is ' .  $_POST['width'];
-$myWidth = 'Your Hegith is ' . $_POST['height'];
+$myHeight = 'Your Screen Width is ' .  $_POST['width'];
+$myWidth = 'Your Screen Heigth is ' . $_POST['height'];
 
 
-echo $myHeight;
+echo nl2br($myHeight);
 echo $myWidth;
 
 ?>
