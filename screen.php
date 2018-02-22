@@ -4,7 +4,7 @@ $myHeight = $_POST['width'];
 $myWidth = $_POST['height'];
 
 
-echo $myHeight;
+echo nl2br($myHeight);
 echo $myWidth;
 
 ?>
