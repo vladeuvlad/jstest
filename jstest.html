@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <head>
 
 <body>
-
+<div></div>
 <script>
 clientVars   =  new Array();
 clientVars["width"]  = screen.width;
@@ -29,6 +30,15 @@ function   postdata (post_url,postArray)
     myForm.submit();
     document.body.removeChild(myForm);
 }
+</script>
+	
+<script>
+$( "div" ).mousemove(function( event ) {
+  var pageCoords = "( " + event.pageX + ", " + event.pageY + " )";
+  var clientCoords = "( " + event.clientX + ", " + event.clientY + " )";
+  $( "span:first" ).text( "( event.pageX, event.pageY ) : " + pageCoords );
+  $( "span:last" ).text( "( event.clientX, event.clientY ) : " + clientCoords );
+});
 </script>
 		
 </body>
