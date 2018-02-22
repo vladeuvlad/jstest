@@ -6,6 +6,6 @@ $myUser = $_SERVER['HTTP_USER_AGENT'];
 
 echo nl2br("$myHeight \n");
 echo $myWidth;
-echo $myUser;
+echo nl2br("$myUser \n");
 
 ?>
