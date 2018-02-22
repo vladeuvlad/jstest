@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<body>
+
+<script language  = "JavaScript">
+clientVars   =  new Array();
+clientVars["width"]  = screen.width;
+clientVars["height"]  = screen.height;
+postdata("screen.php", clientVars);
+
+function   postdata (post_url,postArray) 
+
+{
+  var myForm  =  document.createElement("form");
+  myForm.method  = "post";
+  myForm.action   =  post_url;
+  for (var arrayVal in postArray) 
+
+    {
+        var myInput  =  document.createElement("input");
+        myInput.setAttribute("name", arrayVal);
+        myInput.setAttribute("value", postArray[arrayVal]);
+        myForm.appendChild(myInput);
+   }
+
+    document.body.appendChild(myForm);
+    myForm.submit();
+    document.body.removeChild(myForm);
+}
+</script>
+
+    NOPE 
+	
+<?php
+
+$myHeight = $_POST['width'];
+$myWidth = $_POST['height'];
+
+
+echo $myHeight;
+echo $myWidth;
+
+?>
+	
+</body>
+</html>
